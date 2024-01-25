@@ -95,4 +95,45 @@ CSS
 
 // Lecture 31
 
-1.
+1. inheritance - easily overridden
+2. there is a difference between inheritance and conflicting
+3. universal selector - selects all elements
+
+// Lecture 33
+
+CSS BOX MODEL
+
+1. content - text , images ... etc
+2. border - a line around the elemnt
+3. padding - invisible space inside the elemnt
+4. margin - space outside the element
+5. fill area - area that gets filled with background color and background image
+
+// Lecture 34
+
+1. padding
+2. margins
+3. collapsing margins -when two margins occupy same place then higher one will occupy place
+
+// Lecture 35
+
+1. height and width
+
+// lecture 38
+
+1. block level and inline boxes
+2. display css property
+3. for inline elemnts top and bottam boxmodel doesnot apply
+4. block, inline, inline-block
+
+// lecture 39
+
+1. relative and absolute positioning
+2. for absolute positioning there should be on relative container
+3. use top bottom right left for positioning
+
+// lecture 40
+
+1. PSUEDO ELEMENTS(::XXXX) - not exist in html but still we can style
+2. adjacent silbling elemnt (elemnt + element ::XXXXX)
+3. after and after , content properties
