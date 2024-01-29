@@ -137,3 +137,67 @@ CSS BOX MODEL
 1. PSUEDO ELEMENTS(::XXXX) - not exist in html but still we can style
 2. adjacent silbling elemnt (elemnt + element ::XXXXX)
 3. after and after , content properties
+
+// Lecture 45
+
+1. what is layout - arrange or placements of elements
+2. page layouts and component layouts
+3. Float layouts , Flex Box , Grid
+
+// lecture 46
+
+1. Float Layout : means remove elemnts from normal flow - float:right,left..
+
+// SKIPPPED FLOAT CONCEPTS
+
+// lecture 51
+
+1. FlexBox used to replace floats
+2. display:flex -- display all elemnts side by side
+3. align-items:center,flex-end,strech......
+4. justify-content: space-between........
+
+// lecture 52
+
+1. Flexbox terminology: Flex-container, Flex-items, main axis & cross axis
+2. Flex Container: Gap, justify-content, align-items,flex-direction,flex-wrap,align-content
+3. Flex Items: align-self, flex-grow, flex-shrink.....
+
+// Lecture 53
+
+1. align-self : used to arrange individual elemnts in the flexbox
+2. order : used to position the elemnts
+3. gap : gap creates spaces in flexbox
+
+// Lecture 54
+
+1. Flex Basis - flex-basis : same as width, flex-shrink : it is used to set same to size , flex-grow: it is used to fit the elements
+2. Default: flex-basis:auto, flex-shrink:1, flex-groe:0;
+
+3. short and
+
+// Lecture 58
+
+CSS GRID
+
+1. grid
+2. grid-template-columns, grid-template-rows
+3. column-gap, row-gap
+
+// Lecture 59
+
+1. Grid: used to build 2-diamensional layouts
+
+// Lecture 60
+
+1. fr instead of px
+2. auto - which will take only required place
+3. repeat(no.of columns, value) - shorthand property
+
+// lecture 61
+
+1. grid column and grid row placings
+
+// lecture 62
+
+1. Aligning grid-items
