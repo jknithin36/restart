@@ -201,3 +201,80 @@ CSS GRID
 // lecture 62
 
 1. Aligning grid-items
+
+---
+
+---
+
+---
+
+---
+
+// Lecture 70
+
+part 1 :
+
+1. red : attention,power,passion,excitement
+2. orange : less aggressive, happiness, cheerfulness, creativity
+3. yellow : Joy, brightness, intelligence
+4. green : nature, health, growth and harmony
+5. Blue: peace, trustworthy, professsionalism
+6. purple: wealth, wisdom, magic
+7. pink : romance, care and affection
+8. brown : nature, durability and comfort
+9. black : power, elegance, minimalism, grief and sorrow
+
+part 2:
+use a good color tone
+
+part 3:
+
+we need use two types of volor pallete:
+
+1. a main color - use to draw attention most important elements on the page
+
+2. a grey color
+
+part4 :
+
+with more experience we can add accent colors
+
+part5 :
+
+crate lighter and darker versions(tints and shades)
+
+**\*\*** always use contrast checker on colors **\***
+
+// Lecture 72
+
+IMAGES
+
+1. product photos
+2. Story telling photos
+3. illustrations
+4. patterns 2d and 3d
+
+**_ compress images for better performance _**
+
+// Lecture 73
+
+ICONS
+
+1. use a good icon pack
+2. use svg icons or icon fonts
+3. color svg icons stroke and fill properties
+
+// Lecture 75
+
+//lecture 77
+
+1. less border-radius : less border-radius
+2. more-border-radius: playful
+3. use border-radius on buttons, images, around icons, standout sections and other elements
+   ....etc
+
+// lecture 78
+
+1. use tons of white spaces between sections, elements
+2. use white spaces instead of lines
+3. tip : start with lot of white space , then adjust
