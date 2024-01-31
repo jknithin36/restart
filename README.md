@@ -210,9 +210,69 @@ CSS GRID
 
 ---
 
+---**\*\***-----
+
 // Lecture 70
 
-part 1 :
+// Web design
+
+1. typography
+2. colors
+3. images and illustrations
+4. icons
+5. shadows
+6. Border-radius
+7. white-spaces
+8. visual Hieracy
+9. user Experience
+10. Component and Layout
+
+**_ TIP _**
+
+website personalities:
+
+1. Serious/ Elegant(luxury)
+2. minimalist/simple
+3. plain/ Neutral (structular layout)
+4. Bold / confident (big and bold typography)
+5. calm / Peaceful (for products and services)
+6. startup / upbeat
+7. playful and fun
+
+---**\*\***-----
+
+**_ TYPOGRAPHY _**
+
+1.  use only good and popular typefaces
+2.  one or two(rare case) type face per page
+
+    <!-- 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 -->
+
+3.  For Normal text: 16px to 32px
+4.  For Long texts(Blogs) try 20px or bigger
+5.  For headlines : 50px+ and bold (600+)
+    depending upon personality
+6.  DONT USE Font Weight under regular 400
+7.  less than 75 characters per line
+8.  For normal-sized text, use a line height between 1.5 and 2. For big text, go below 1.5
+<!-- 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 -->
+
+9.  Decrease letter spacing in headlines, if it looks unnatural (this will come from experience)
+10. Caps - short titles (short and bold & increase letter spacing)
+11. Usally dont justift text
+12. no long text boxes (try to create small blocks)
+
+**_ TIP _**
+
+font-size : 16 to 32(normal) and 20+ (Blogs) 50+ (Headlines)
+font-weight : 600+ (Headings) and above 400 (normal
+)
+line-height : 1.5 to 2 (normal) and below 1.5(Headings) 8. part 1 :
+letter-spacing : should be less for headlines
+
+---**\*\***-----
+
+**_ COLOR_**
 
 1. red : attention,power,passion,excitement
 2. orange : less aggressive, happiness, cheerfulness, creativity
@@ -224,57 +284,92 @@ part 1 :
 8. brown : nature, durability and comfort
 9. black : power, elegance, minimalism, grief and sorrow
 
-part 2:
-use a good color tone
+**_TIPS_**
 
-part 3:
+1. use a good color tone (make sure main color should matches website personality)
 
-we need use two types of volor pallete:
+2. we need use two types of volor pallete:
 
-1. a main color - use to draw attention most important elements on the page
+a main color - use to draw attention most important elements on the page
 
-2. a grey color
+a grey color
 
-part4 :
+3. with more experience we can add accent colors
 
-with more experience we can add accent colors
+4. For diversity, create lighter and darker “versions” (tints and shades)
 
-part5 :
+5. Text should usually not be completely black. Lighten if up it looks heavy and uninviting
 
-crate lighter and darker versions(tints and shades)
+6. always use contrast checker on colors
 
-**\*\*** always use contrast checker on colors **\***
+7. On Darker backgrounds try lighter tints
 
-// Lecture 72
+---**\*\***-----
 
-IMAGES
+**_IMAGES_**
+
+TYPES OF IMAGES
 
 1. product photos
 2. Story telling photos
 3. illustrations
 4. patterns 2d and 3d
 
-**_ compress images for better performance _**
+**_TIP_**
 
-// Lecture 73
+1. use relevant iamges
+2. try to show real people to users emotions
+3. Crop images (if necessary)
+4. Darker or brighten image (using gradient)
+5. use same size images when you are placing then side by side
+   **_ compress images for better performance _**
 
-ICONS
+---**\*\***-----
+
+**_ICONS_**
 
 1. use a good icon pack
 2. use svg icons or icon fonts
-3. color svg icons stroke and fill properties
+3. color svg icons usning stroke and fill properties
+4. use relevant images
+5. dont create large icons
 
-// Lecture 75
+**_TIP_**
+try to enclose them in shapes
 
-//lecture 77
+---**\*\***-----
 
-1. less border-radius : less border-radius
+**_SHADOWS_**
+
+1. less border-radius : simple
 2. more-border-radius: playful
 3. use border-radius on buttons, images, around icons, standout sections and other elements
    ....etc
 
-// lecture 78
+**_TIP_**
 
-1. use tons of white spaces between sections, elements
-2. use white spaces instead of lines
-3. tip : start with lot of white space , then adjust
+Try different colors for shadows
+
+---**\*\***-----
+
+**_ Border-radius_**
+
+1.  Use border-radius to increase the playfulness and fun of the design, to
+    make it less serious
+2.  Typefaces have a certain roundness: make sure that border-radius matches that roundness!
+3.  Use border-radius on buttons, images, around icons, standout sections and other elements
+
+---**\*\***-----
+
+**_WHITESPACE_**
+
+1.  use tons of white spaces between sections, elements
+2.  use white spaces instead of lines
+    start with lot of white space , then adjust
+
+**_TIP_**
+
+1. Use white spaces to enhance user experience
+2. start with lot of white space , then adjust
+
+---**\*\***-----
