@@ -231,7 +231,7 @@ CSS GRID
 
 website personalities:
 
-1. Serious/ Elegant(luxury)
+1. Serious/ Elegant(luxury) -- real estate, fashion(cost), jewelery, luxury products and services
 2. minimalist/simple
 3. plain/ Neutral (structular layout)
 4. Bold / confident (big and bold typography)
@@ -400,3 +400,31 @@ Try different colors for shadows
 6. de-emphaisze elements like labels or secondary information
 
 7. emphasoze an important component using background color, shadow or border
+
+**_UI AND UX _**
+
+UI:
+Visual presentation of a product(how it looks)
+
+eg: layouts, Personality, Typography,colors,icons etc...
+
+UX:
+
+Experience that user has while interacting with the product(functional)
+
+eg:
+
+1. does the app feel logical and well thought
+2. are users reaching the goal
+
+**_ QUESTIONS_**
+
+1. what personality(Vibe) website do you want?
+   **_TIP_**
+   Apply typography , color, images,icons, shadows, border-radius, layout according to them
+
+**_TIP_**
+
+1. How to create website ?
+
+Elements ---> Components ----> layouts ----> Webpage
