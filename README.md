@@ -373,3 +373,30 @@ Try different colors for shadows
 2. start with lot of white space , then adjust
 
 ---**\*\***-----
+
+**_VISUAL HIERARCHY_**
+
+1. we use combination of
+   position,
+   size,
+   colors,
+   spacing,
+   borders and shadows
+   to esthablish a meaningful visual hierarchy
+   (is about defining a path for users to guide then through the page in other words draw attention to the most important elements)between elements / components.
+
+**_TIP_**
+
+1. position important elements closer to the top of page(where they get more attention)
+
+2. use images mindfully, as they draw a lot of attention(larger images get more attention)
+
+3. use white spaces stargetically
+
+4. for text elements, use font size, font weight, color and white spaces to convey importance
+
+5. emphasize elements like titles, sub-titles,links,buttons,datapoints, icons
+
+6. de-emphaisze elements like labels or secondary information
+
+7. emphasoze an important component using background color, shadow or border
