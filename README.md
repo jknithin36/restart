@@ -428,3 +428,14 @@ eg:
 1. How to create website ?
 
 Elements ---> Components ----> layouts ----> Webpage
+
+// Lecture 91
+
+Tables :
+
+1. <table></table>
+2. <thead></thead>
+3. <tbody></tbody>
+4. <th></th>
+5. <tr></tr>
+6. <td></td>
