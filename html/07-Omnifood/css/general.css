@@ -60,6 +60,7 @@ html{
   display: grid;
   row-gap: 9.6rem;
   column-gap: 6.4rem;
+  /* margin-bottom: 9.6rem; */
 }
 .container{
   max-width: 120rem;
@@ -67,6 +68,10 @@ html{
   margin: 0 auto;
   /*Auto gives same margin in left and right*/
 
+}
+
+.grid:not(:last-child){
+  margin-bottom: 9.6rem ;
 }
 .grid--2-cols{
   grid-template-columns: repeat(2, 1fr);
@@ -184,6 +189,10 @@ letter-spacing: 0.75px;
   margin-bottom: 3.2rem;
   
 }
+
+.refactor{
+  font-size: 3.2rem;
+}
 .btn:link,.btn:visited{
   display: inline-block;
   text-decoration: none;
@@ -234,3 +243,25 @@ letter-spacing: 0.75px;
     text-align: center;
   }
  
+  /*LIST*/
+
+  .list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+  
+  .list-item{
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+  
+  .list-icon{
+    width: 3rem;
+    height: 3rem;
+    color: #e67e22;
+  }
+  
