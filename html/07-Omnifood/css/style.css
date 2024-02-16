@@ -84,6 +84,18 @@ opacity: 50%;
   padding: 4.8rem 0 9.6rem 0;
 
 }
+
+@media(max-width:1200px){
+  .section-hero{
+    background-color: orangered;
+  }
+}
+
+@media(max-width:600px){
+  .section-hero{
+    border: 20px solid yellow;
+  }
+}
 .hero{
 max-width: 130rem;
 margin: 0 auto;
@@ -462,7 +474,7 @@ margin-bottom: 1.6rem;
 /*---------CTA ---------*/
 
 .section-cta{
-  padding: 9.6rem 0;
+  padding: 4.8rem 0 12.8rem 0;
 }
 .cta{
 display: grid;
@@ -530,4 +542,75 @@ box-shadow: 0 1px 2px rgba(0, 0, 0, 0.10);
 .cta *:focus{
   outline: none;
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5) ;
+}
+
+/*********FOOTER_--------*/
+
+.footer{
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.grid-footer{
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col{
+  display: flex;
+  flex-direction: column;
+}
+.footer-logo{
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.footer-heading{
+  font-size:1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contacts{
+  font-style: normal;
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+.address{
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link, .footer-link:visited{
+text-decoration: none;
+font-size: 1.6rem;
+color: #767676;
+transition: all 0.3s;
+}
+
+.footer-link:hover, .footer-link:active{
+  color: #555;
+}
+
+.social-links{
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon{
+height: 2.5rem;
+width: 2.4rem;
+}
+
+.copyright{
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: auto;
 }
