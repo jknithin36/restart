@@ -439,3 +439,96 @@ Tables :
 4. <th></th>
 5. <tr></tr>
 6. <td></td>
+
+<!-- // ----- JAVA SCRIPT //// --------- -->
+
+// Lecture 6
+
+console.log("xxxxxx"); - to print some thing to console
+
+// Lecture 7
+
+1. Java Script is a High level, object-oriented, multi=paradigm programming language
+
+2. Role of Js In Web Developement and other decelopment
+
+- To make web-application Dynamic & Interactive
+- JavaScript is also used as webServer (Node.js)
+- FrontEnd LIbraries (React,Angular,Vue)
+- Native Mobile Applications(React-native, iconic)
+- Desktop(Eectron)
+
+// Lecture 9
+
+<!-- Tip: it is convention to write " ; " at the end of the statement in JavaScript, not a mandatory thing -->
+
+-----VALUES AND VARIABLES
+
+1. value is a piece of data = string, number, boolean,.....
+2. variables = storage for values
+
+// Lecture 11
+
+--- DataTypes
+
+- There a two type of values in javaScript
+- Objects and primitive
+- there are 7 types of priitive data-types:
+- Number(all numbers like decimals, integers)
+- String (All values which we keep in " ")
+- Boolean (true or false)
+- undefined (value is taken by variable but no defined yet)
+- null (empty value)
+- symbol(es2015)
+- BigInt(larger integers)
+<!-- JavaScript has dynamic typing, we do not have to manually define the datatype of the value stored in variable , it will automatically determined -->
+
+// Lecture 12
+
+---- Var , let, const
+
+- let = is used when variable can change at some point (reassigning variable(Mutate))
+  eg : let age = 23 ; age = 24;
+
+- const = is used when the valuedoesnot change in future (cannot reassign value(Immutable))
+  eg : const fristname = "Spider";
+
+- var = works same like let (but it is an old one)
+
+// Lecture 13
+
+--- Operators
+
+- MatheMatical operators( +, -, \*, /,\*\*,....)
+- Assignment Operators(-, x+=value, x-=value, x++.x--,....)
+- Comparision Operators( >, <, >=,<=,....)
+
+// lecture 14
+
+--- Operator Precedence
+
+1. Grouping , ... , \*\*(exponential) , MathematicalOperators, .... , =(equals to)..
+
+for more visit mdnDocs...
+
+// Lecture 18
+
+--- If Else Decicions
+
+if(condition){
+
+}else{
+
+}
+
+// lecture 20
+
+--- Type Conersion and coerrsion
+
+- we convert vs js automatically convert
+
+// Lecture 21
+
+--- Truthy and falsy values
+
+0, "", undefined, null , Nan
