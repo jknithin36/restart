@@ -4,7 +4,6 @@
 
 // let js = "Amazing";
 
-
 // // if (js==="Amazing"){
 // //   alert("JS IS FUN !");
 // // }
@@ -15,7 +14,6 @@
 // }
 
 // console.log(46+2-5);
-
 
 // // 1. Values and variables
 
@@ -58,7 +56,6 @@
 // console.log(typeof isIsland);
 // console.log(typeof continrnt);
 // console.log(typeof 2001);
-
 
 // console.log("-------Data Types End------End" );
 // // 3. Var , let, const
@@ -215,7 +212,7 @@
 //   console.log("Sorry");
 // }
 
-// 12.Bollean Logic 
+// 12.Bollean Logic
 
 // const hasDrivingLicense = true;
 // const hasGoodVision = true;
@@ -263,7 +260,6 @@
 //   console.log("sorry");
 // }
 
-
 // 14. Ternary Operator
 // const day = "monday";
 
@@ -272,15 +268,157 @@
 
 // <----BASICS 2--------->
 
-'use strict';
+"use strict";
 
 let hasDrivingLicense = false;
 const passTest = true;
 
-if(passTest) hasDrivingLicense = true;
+if (passTest) hasDrivingLicense = true;
 
-if(hasDrivingLicense) console.log("you can drive....");
-
+if (hasDrivingLicense) console.log("you can drive....");
 
 // 1. Functions
 
+// Missed i will do again
+
+//2 Objects
+
+const aboutMe = {
+  fristName: "shiva",
+  lastName: "prasad",
+  birthYear: 1999,
+  job: "Student",
+  friends: ["Spider", "Bat", "Ball"],
+  hasDrivingLicense: true,
+
+  // calcAge: function () {
+  //   return 2024 - this.birthYear;
+  // },
+  calcAge: function () {
+    this.age = 2024 - this.birthYear;
+    return this.age;
+  },
+};
+
+console.log(aboutMe);
+
+// DOT AND BRACKET NOTATION
+
+console.log(aboutMe.friends);
+console.log(aboutMe["friends"]);
+
+const nameKey = "Name";
+console.log(aboutMe["frist" + nameKey]);
+
+// const value = prompt("What do you want about Me ?");
+
+// if (aboutMe[value]) {
+//   console.log(aboutMe[value]);
+// } else {
+//   console.log("Invalid Input");
+// }
+
+aboutMe.location = "Kent,Ohio";
+aboutMe["twitter"] = "jknithin3";
+
+console.log(aboutMe);
+
+// pratice
+
+console.log(
+  `${aboutMe.fristName} has ${aboutMe.friends.length} friends, and his bestfriend is called ${aboutMe.friends[0]}`
+);
+
+// Object Methods
+
+const number = 23;
+
+switch (number) {
+  case 23:
+    console.log("you got it");
+    break;
+  default:
+    console.log("Sorry");
+}
+
+// console.log(aboutMe.age);
+
+// Loops
+
+// for repetative tasks
+// for loop keeps running while condition is true
+
+// for (let i = 1; i <= 10; i++) {
+//   console.log(`lifting weight repetition ${i} 😇`);
+// }
+
+//Looping Arrays
+
+const aboutArray = [
+  "SpiderMan",
+  "PeterParker",
+  2024 - 1999,
+  "superHero",
+  ["HomeComing", "farfromHome", "no wa home"],
+  true,
+];
+
+const types = [];
+for (let i = 0; i < aboutArray.length; i++) {
+  console.log(aboutArray[i], typeof aboutArray[i]);
+
+  // Filling an Empty Array
+  // types[i] = typeof aboutArray[i];
+  types.push(typeof aboutArray[i]);
+}
+
+console.log(types);
+
+const years = [2001, 2002, 2003, 2004];
+
+const ages = [];
+
+for (let i = 0; i > years.length; i++) {
+  ages.push(2024 - years[i]);
+}
+
+console.log(years);
+
+// continue and break Statements
+
+console.log("--------only strings-----");
+
+for (let i = 0; i < aboutArray.length; i++) {
+  if (typeof aboutArray[i] !== "string") continue;
+
+  console.log(aboutArray[i], typeof aboutArray[i]);
+}
+
+console.log("-------Break--------");
+for (let i = 0; i < aboutArray.length; i++) {
+  if (typeof aboutArray[i] === "number") break;
+  console.log(aboutArray[i], typeof aboutArray[i]);
+}
+
+// Backward Looping
+console.log("-------BackWard Looping-------");
+for (let i = aboutArray.length - 1; i >= 0; i--) {
+  console.log(aboutArray[i]);
+}
+
+console.log(aboutArray.length);
+
+const ar = [1, 2, 3];
+console.log(ar.length);
+
+// INSIDE LOOPS
+
+for (let i = 1; i <= 5; i++) {
+  console.log("----Starting Exercise-----");
+
+  for (let j = 1; j < 6; j++) {
+    console.log(`lifting weights repetition ${j}`);
+  }
+}
+
+// While LOOP
