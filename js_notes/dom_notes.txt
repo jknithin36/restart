@@ -1,0 +1,22 @@
+DOM - Manipulation
+
+1. document - it is a entry point to dom model which gives accesss to various methods to interact
+
+2. querySelector() - it is used to select single element from html file
+
+3. textContent - it is used to display the text_content present in the element
+
+eg: document.querySelector(".className").textContent;
+
+---------------------- End of Lecture 70
+
+DOM methods are not a part of js actually they are web apis developed in js which gives acces to things
+
+----------------------- End of Lecture 71
+
+4. value - it is used to set a value to input feild
+
+----------------------- End of Lecture 72
+
+
+5. addEventListner("event_type", function(){what should be executed})

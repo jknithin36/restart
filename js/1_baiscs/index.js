@@ -422,3 +422,19 @@ for (let i = 1; i <= 5; i++) {
 }
 
 // While LOOP
+
+console.log(`------WHILE -----Loop`);
+let rep = 1;
+while (rep <= 10) {
+  console.log(`Lifying ${rep}`);
+  rep++;
+}
+
+// Example
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+while (dice !== 6) {
+  console.log(`you rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+}
