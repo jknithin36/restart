@@ -20,3 +20,26 @@ DOM methods are not a part of js actually they are web apis developed in js whic
 
 
 5. addEventListner("event_type", function(){what should be executed})
+
+eg: document.querySelector(".className").addEventListner("click", ()=>{console.log("clicked")})
+
+Some_Event_Types: 
+
+- click - when a user clicks on the button
+- keydown/ keyup - when user clicks some key on keyboard
+- mouseover/ mouseout - when mouse pointer enters or leaves the element area
+
+6. style - it is used to style the element
+eg: document.querySelector(".classname").style.color = red;
+
+7. querySelectorAll - used to select multiple elements with className
+eg: document.querySelectorAll(".classname").style.fontSize = 24rem;
+
+8. classList - it provide access to manipulate classes on a element
+
+Some_properties of classList :
+add - used to add class
+remove - used to remove class
+contains - checks wheather class is present
+toggle - add if not-present , remove if present
+

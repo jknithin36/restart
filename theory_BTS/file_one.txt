@@ -1,0 +1,39 @@
+JavaScript is a 
+
+1. High-level 
+ Note : Basicllay There a two levels "Low-Level" & "High-Level" 
+
+ - Low Level - Developer has to manage resources (In Simple we need storage to store variable in computer)
+ Eg : c - Language
+
+ - High-Level : Developer doesn't need to worry, everything happens automatically.
+ Eg : Python, JavaScript
+
+2. Garbage-collected:
+ cleans the unused stuff
+
+3. Interpreted or just-in-time compiled:
+
+4. Multi-Paradigm:
+ An Approach and mindset of structuring code
+
+5.Prototype-based object-oriented
+
+6. Frist-Class Functions
+
+7. Dynamic Typed
+
+8. Single-threaded
+
+9. Non-blocking event loop
+
+<------------------END----------->
+
+JS Engine
+
+- program that executes JavaScript code
+Eg: v8 engine powerd by google
+
+Scoping
+
+scope chain 
