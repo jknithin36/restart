@@ -39,6 +39,14 @@ const restaurant = {
       close: 24,
     },
   },
+
+  orderpasta: function (ing1, ing2, ing3) {
+    console.log(`here is yoyr delicious pasta with ${ing1}, ${ing2},${ing3}`);
+  },
+  orderPizza: function (mainIngredients, ...othersIng) {
+    console.log(mainIngredients);
+    console.log(othersIng);
+  },
 };
 
 // const arr = [2, 3, 4];
@@ -347,4 +355,201 @@ const restaurant = {
 //   straterIndex: 3,
 // });
 
-// Destructing practice
+// Destructing Array practice
+// Basic
+// const arr = [1, 2, 3];
+// let [a, b, c] = arr;
+// console.log(a, b, c);
+// console.log("-----Swap-------");
+// // Swap without any temp
+// [b, a] = [a, b];
+// console.log(a, b);
+// // Skipiing variables
+// console.log("----Skipiing variables---");
+// const arr1 = [1, 2, 3];
+// let [x, , y] = arr1;
+// console.log(x, y);
+// //Nested Destructuring
+// console.log("----nested---");
+// const arr2 = [
+//   [1, 2],
+//   [3, 4],
+//   [5, 6],
+// ];
+// const [x1, y1, z1] = arr2;
+// console.log(x1, y1, z1);
+// console.log("----More Nested-----");
+// const [[x2, x3], [y2, y3], [z2, z3]] = arr2;
+// console.log(x2, x3, y2, y3, z2, z3);
+// console.log("-------Default values-------");
+// const arr3 = [1];
+// const [a1 = 0, a2 = 0, a3 = 0] = arr3;
+// console.log(a1, a2, a3);
+// console.log("------Skipping Elements with Default Values---------");
+// const arr4 = [1, 2, 3];
+// const [frist = 0, , second = 0] = arr4;
+// console.log(frist, second);
+
+// console.log("-----Basic-------");
+// console.log("---- Variable Names should be same as object variable names  ");
+// const obj = {
+//   a: 1,
+//   b: 2,
+//   c: 3,
+// };
+// const { a, b, c } = obj;
+// console.log(a, b, c);
+// console.log("-----Nested Object Destructuring-----");
+// const obj1 = {
+//   a1: {
+//     l: 1,
+//     o: 2,
+//   },
+//   b1: {
+//     k: 3,
+//     e: 4,
+//   },
+// };
+
+// const {
+//   a1: { l: x1, o: y1 },
+//   b1: { k: x2, e: y2 },
+// } = obj1;
+// console.log(x1, y1, x2, y2);
+
+// const obj2 = {
+//   a: 1,
+// };
+
+// const { a: x3 = 34, x4 = 23, x5 = 34 } = obj2;
+// console.log(x3, x4, x5);
+
+// const me = {
+//   firstName: "Iron",
+//   lastName: "Man",
+// };
+// console.log(me);
+
+// const {
+//   firstName: mainName = "give me",
+//   lastName: OtherName = "your Name",
+//   age = 23,
+// } = me;
+
+// console.log(mainName, OtherName, age);
+
+// Caluclation
+// const calculator = function (a, b) {
+//   const add = a + b;
+//   const subtract = a - b;
+//   const multiply = a * b;
+//   const divide = a / b;
+//   const remainder = a % b;
+
+//   return [add, subtract, multiply, divide, remainder];
+// };
+
+// const [b1, b2, r, d, e] = calculator(5, 10);
+// console.log(b1);
+
+// // 3. Spread Operator
+// // takes all the  elements of the and write in another array
+// const arr = [2, 3, 4];
+
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(i);
+// }
+
+// const arr2 = [1, arr[0]];
+// const spreadArray = [1, ...arr];
+// console.log(spreadArray);
+// console.log(...arr2);
+
+// const newMenu = [...restaurant.mainMenu, "Gobi Manchuria"];
+// console.log(newMenu);
+// // use cases
+// // to create copy arrays, and also to merge arrays
+// const mainMenuCopy = [...restaurant.mainMenu];
+// const mergeArray = [...restaurant.mainMenu, ...restaurant.starterMenu];
+// console.log(mergeArray);
+// //spreadOperatoron string
+// const str = "SpiderMan";
+// const str2 = "Saves people";
+// const strArr = [...str, ...str2];
+// console.log(strArr);
+// console.log(..."Hello");
+// function indChar(str) {
+//   console.log(...str);
+// }
+// indChar("shiva");
+
+// // const ingredients = [
+// //   prompt("let's make pasta! "),
+// //   prompt("let's make pasta! "),
+// //   prompt("let's make pasta! "),
+// // ];
+// // restaurant.orderpasta(ingredients[0], ingredients[1], ingredients[2]);
+// // restaurant.orderpasta(...ingredients);
+// //since es18 spreadoperator woeks on objects
+// const newRestuarant = {
+//   ...restaurant,
+//   founder: "SpiderMan",
+//   foundingyear: 2001,
+// };
+// console.log(newRestuarant);
+// const restaurantCopy = { ...restaurant };
+// restaurantCopy.name = "spidey";
+// console.log(restaurantCopy.name);
+// console.log(restaurant.name);
+
+// // Rest Operator
+
+// const arr = [1, 2, ...[3, 4]];
+// console.log(arr);
+
+// const [a, b, ...others] = arr;
+// console.log(a, b, others);
+
+// const [pizza, , risotto, ...others1] = [
+//   ...restaurant.mainMenu,
+//   ...restaurant.starterMenu,
+// ];
+// console.log([...restaurant.mainMenu, ...restaurant.starterMenu]);
+// console.log(pizza, risotto, others1);
+
+// // Objects
+// const { sat, ...weekdays } = restaurant.openingHours;
+// console.log(weekdays);
+
+// // Functions
+
+// const add = function (...parameters) {
+//   console.log(parameters);
+//   // we will get an array
+//   let sum = 0;
+//   for (let i = 0; i < parameters.length; i++) {
+//     sum += parameters[i];
+//   }
+//   console.log(sum);
+// };
+
+// const x = [23, 5, 7];
+// add(...x);
+
+// add(2, 3);
+// add(3, 5, 6);
+
+// restaurant.orderPizza("mushroom", "Spinach", "Tomato", "olives");
+
+// 5. Short Circuting (&& and ||)
+
+console.log(1 || "spider");
+// it(or) will console the frist thruthy value if there is no thruthy value then it will console the value value
+console.log("" || "spider");
+console.log(null || false || 0 || undefined || 1 || "Hello");
+console.log(undefined || null);
+
+const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
+
+const guests2 = restaurant.numGuests || 10;
+console.log(guests2);
