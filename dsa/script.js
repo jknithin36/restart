@@ -5,6 +5,23 @@ const flights =
   "_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30";
 
 // Data needed for first part of the section
+
+const weekdays = ["mon", "tue", "wed", "thu", "fri", "sat"];
+
+const openingHours = {
+  [weekdays[3]]: {
+    open: 12,
+    close: 22,
+  },
+  [weekdays[4]]: {
+    open: 11,
+    close: 23,
+  },
+  [weekdays[5]]: {
+    open: 0, // Open 24 hours
+    close: 24,
+  },
+};
 const restaurant = {
   name: "Classico Italiano",
   location: "Via Angelo Tavanti 23, Firenze, Italy",
@@ -24,31 +41,25 @@ const restaurant = {
       `Order Received....! ${this.starterMenu[straterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
     );
   },
-
-  openingHours: {
-    thu: {
-      open: 12,
-      close: 22,
-    },
-    fri: {
-      open: 11,
-      close: 23,
-    },
-    sat: {
-      open: 0, // Open 24 hours
-      close: 24,
-    },
-  },
-
-  orderpasta: function (ing1, ing2, ing3) {
+  // OLD Way
+  // orderpasta: function (ing1, ing2, ing3) {
+  //   console.log(`here is yoyr delicious pasta with ${ing1}, ${ing2},${ing3}`);
+  // },
+  // New WAY
+  orderpasta(ing1, ing2, ing3) {
     console.log(`here is yoyr delicious pasta with ${ing1}, ${ing2},${ing3}`);
   },
+  //
   orderPizza: function (mainIngredients, ...othersIng) {
     console.log(mainIngredients);
     console.log(othersIng);
   },
+  // OLD_WAY
+  // openingHours : openingHours,
+  // es6 object literals
+  openingHours,
 };
-
+console.log(restaurant.openingHours);
 // const arr = [2, 3, 4];
 // const a = arr[0];
 // const b = arr[1];
@@ -541,15 +552,197 @@ const restaurant = {
 
 // restaurant.orderPizza("mushroom", "Spinach", "Tomato", "olives");
 
-// 5. Short Circuting (&& and ||)
+// // 5. Short Circuting (&& and ||)
 
-console.log(1 || "spider");
-// it(or) will console the frist thruthy value if there is no thruthy value then it will console the value value
-console.log("" || "spider");
-console.log(null || false || 0 || undefined || 1 || "Hello");
-console.log(undefined || null);
+// console.log(1 || "spider");
+// // it(or) will console the frist thruthy value if there is no thruthy value then it will console the value value
+// console.log("" || "spider");
+// console.log(null || false || 0 || undefined || 1 || "Hello");
+// console.log(undefined || null);
+// // restaurant.numGuests = 20;
+// const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
 
-const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
+// const guests2 = restaurant.numGuests || 10;
+// console.log(guests2);
 
-const guests2 = restaurant.numGuests || 10;
-console.log(guests2);
+// console.log("-------------AND---------------");
+// console.log(0 && "Spider");
+// //it consoles the frist falsy values and consoles it without checking next values,if all true then it prints last truthy value
+// console.log(7 && "Hello");
+// // using if-else
+
+// if (restaurant.orderPizza) {
+//   restaurant.orderPizza("Mushrooms", "Spinach");
+// }
+// //using && operator
+// // frist it will check if orderPizza Exists, if exists then it will call te funnction
+
+// restaurant.orderPizza && restaurant.orderPizza("Mushroom", "Spinach");
+
+//6 Nullish operator
+// it works on nullish values not on falsy values - nullish values are null and undefined
+
+restaurant.numGuests = 0;
+const guests = restaurant.numGuests || 10;
+console.log(guests);
+
+const guestCorrect = restaurant.numGuests ?? 10;
+
+// Logical Assignment Operators
+const hotel1 = {
+  name: "Enjoy",
+  numGuests: 0,
+};
+const hotel2 = {
+  name: "Life",
+  owner: "Shiva",
+};
+
+hotel2.numGuests = hotel1.numGuests || 10;
+
+// or logical operator
+// hotel1.numGuests ||= 10;
+
+console.log(hotel2);
+
+// nullish logical operator
+hotel1.numGuests ??= 10;
+console.log(hotel1);
+
+// And Logical operator
+hotel2.owner = hotel2.owner && "<AnONYMOUS>";
+console.log(hotel2.owner);
+hotel2.owner &&= "<Anonymous>";
+console.log(hotel2);
+
+// // Assignment
+
+// const game = {
+//   team1: "Bayern Munich",
+//   team2: "Borrussia Dortmund",
+//   players: [
+//     [
+//       "Neuer",
+//       "Pavard",
+//       "Martinez",
+//       "Alaba",
+//       "Davies",
+//       "Kimmich",
+//       "Goretzka",
+//       "Coman",
+//       "Muller",
+//       "Gnarby",
+//       "Lewandowski",
+//     ],
+//     [
+//       "Burki",
+//       "Schulz",
+//       "Hummels",
+//       "Akanji",
+//       "Hakimi",
+//       "Weigl",
+//       "Witsel",
+//       "Hazard",
+//       "Brandt",
+//       "Sancho",
+//       "Gotze",
+//     ],
+//   ],
+//   score: "4:0",
+//   scored: ["Lewandowski", "Gnarby", "Lewandowski", "Hummels"],
+//   date: "Nov 9th, 2037",
+//   odds: {
+//     team1: 1.33,
+//     x: 3.25,
+//     team2: 6.5,
+//   },
+// };
+
+// // We're building a football betting app (soccer for my American friends 😅)!
+
+// // Suppose we get data from a web service about a certain game (below). In this challenge we're gonna work with the data. So here are your tasks:
+
+// // 1. Create one player array for each team (variables 'players1' and 'players2')
+// const [players1, players2] = game.players;
+// console.log(players1, players2);
+// // 2. The first player in any player array is the goalkeeper and the others are field players. For Bayern Munich (team 1) create one variable ('gk') with the goalkeeper's name, and one array ('fieldPlayers') with all the remaining 10 field players
+// const [gk, ...fieldPlayers] = players1;
+// console.log(gk);
+// console.log(fieldPlayers);
+// // 3. Create an array 'allPlayers' containing all players of both teams (22 players)
+// const allplayers = [...players1, ...players2];
+// console.log(allplayers);
+// // 4. During the game, Bayern Munich (team 1) used 3 substitute players. So create a new array ('players1Final') containing all the original team1 players plus 'Thiago', 'Coutinho' and 'Perisic'
+// const players1Final = [...players1, "Thiago", "Coutinho", "perisic"];
+// console.log(players1Final);
+// // 5. Based on the game.odds object, create one variable for each odd (called 'team1', 'draw' and 'team2')
+
+// const { team1, x: draw, team2 } = game.odds;
+// console.log(team1, draw, team2);
+// // 6. Write a function ('printGoals') that receives an arbitrary number of player names (NOT an array) and prints each of them to the console, along with the number of goals that were scored in total (number of player names passed in)
+
+// const printGoals = function (...goals) {
+//   console.log(goals);
+
+//   console.log(`${goals.length} goals were scored`);
+// };
+
+// printGoals("Lewandowski", "Gnarby", "Lewandowski", "Hummels");
+// // 7. The team with the lower odd is more likely to win. Print to the console which team is more likely to win, WITHOUT using an if/else statement or the ternary operator.
+// team1 < team2 && console.log("Team 1 is more likely to win");
+// team1 > team2 && console.log("Team 2 is more likely to win");
+// // TEST DATA FOR 6: Use players 'Davies', 'Muller', 'Lewandowski' and 'Kimmich'. Then, call the function again with players from game.scored
+
+// // 8. The for-of loop:
+// const arr = [1, 2, 3, 4, 5];
+// for (const x of arr) {
+//   console.log(x);
+// }
+
+// const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+
+// // using destructing
+// for (const [i, el] of menu.entries()) {
+//   console.log(`${i + 1}: ${el}`);
+// }
+
+// 9 Enhanced Object Literal
+
+// // 10 Optional Chaning (?.)
+// console.log(restaurant.openingHours.mon?.open);
+// //it will check whether it exists or if exists then it will consoles otherwise it will just show undefined instead of error
+// console.log(restaurant?.openingHours?.sat?.open);
+
+// const days = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+
+// for (const day of days) {
+//   console.log(day);
+//   restaurant.openingHours[day]?.open;
+//   console.log(`on ${day}, we open at ${open}`);
+// }
+
+// // Looping the object
+// const properties = Object.keys(openingHours);
+// console.log(properties);
+
+// let openStr = `we are open on ${properties.length} days`;
+
+// for (const day of properties) {
+//   openStr += `${day},`;
+// }
+// console.log(openStr);
+
+// // property values
+// const propertyValues = Object.values(openingHours);
+// console.log(propertyValues);
+
+// // object.entries
+// const entries = Object.entries(openingHours);
+
+// console.log(entries);
+
+// for (const [key, { open, close }] of entries) {
+//   console.log(`On ${key} we open at ${open} and close at ${close}`);
+// }
+
+// SETS
