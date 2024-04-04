@@ -350,3 +350,101 @@ console.log(typeof 20n);
 console.log(676767676767767676n + " Really Big");
 console.log(10n / 3n);
 console.log(10 / 3);
+
+// coercion in js
+let x = 10;
+let y = "20";
+const z = x + y;
+console.log(typeof z);
+// output will be String because when we add integer with string the output will be string it will conact both values instead of adding them
+
+let x1 = "10";
+let y2 = 2;
+const z1 = x1 * y2;
+console.log(z1);
+console.log(typeof z1);
+// now number
+
+const z3 = y - x;
+console.log(typeof z3);
+// output will be number
+
+const z4 = y / x;
+console.log(typeof z4);
+// Create a function that takes an array of numbers as input and returns the largest number in the array.
+
+const largerNumber = function (arr) {
+  if (arr.length === 0) {
+    return undefined;
+  }
+
+  let val = arr[0];
+  arr.forEach(function (i) {
+    if (i > val) {
+      val = i;
+    }
+  });
+
+  return val;
+};
+
+console.log(largerNumber([1, 2, 3, 4]));
+
+// Write a function that takes a string as input and returns the string reversed.
+
+const stringReverse = function (str) {
+  const strSplit = str.split("");
+  const reverseArray = strSplit.reverse();
+  return reverseArray.join("");
+};
+console.log(stringReverse("Hello"));
+
+const splitA = "hello".split("");
+console.log(splitA);
+console.log(splitA.at(0));
+
+const anotherOne = (str) => {
+  let arr = [];
+  const splitArray = str.split("");
+  for (const x of splitArray) {
+    arr.unshift(x);
+  }
+  return arr.join("");
+};
+
+console.log(anotherOne("Hello"));
+
+// Implement a function that takes an array of strings and returns a new array with the lengths of those strings.
+
+// array of strings ----> new array with lengths
+
+const strlengthOfArray = function (strArr) {
+  let arr = [];
+  for (const x of strArr) {
+    arr.push(x.length);
+  }
+
+  return arr;
+};
+
+console.log(strlengthOfArray(["Hello", "I", "am", "from", "India"]));
+
+//Create a function that takes an array of numbers and returns the sum of all positive numbers in the array.
+
+// array of numbers ---> sum of all positve numbers
+
+const positveSum = function (arr) {
+  const onlyPositive = arr.filter((i) => {
+    return i > 0;
+  });
+
+  const output = onlyPositive.reduce((acc = 0, i) => {
+    return acc + i;
+  });
+
+  return output;
+};
+
+console.log(positveSum([1, 1, 1, -1]));
+
+// DATES
