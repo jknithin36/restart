@@ -448,3 +448,56 @@ const positveSum = function (arr) {
 console.log(positveSum([1, 1, 1, -1]));
 
 // DATES
+
+//1. create date
+const dateNow = new Date();
+console.log(dateNow);
+console.log(new Date("December 13, 2001"));
+console.log(new Date(account1.movementsDates[0]));
+// year, month, day, hour, minutes, seconds
+
+console.log(new Date(2037, 10, 31));
+// methods
+const future = new Date(2037, 10, 19, 15, 23);
+console.log(future);
+console.log(future.getFullYear());
+console.log(future.getMonth());
+console.log(future.getDate());
+console.log(future.getDay());
+console.log(future.getHours());
+console.log(future.getMinutes());
+console.log(future.getSeconds());
+console.log(future.toISOString());
+console.log(future.getTime());
+console.log(Date.now());
+future.setFullYear(2040);
+
+// Operations with dates
+console.log(Number(future));
+console.log(+future);
+
+const daysPass = (date1, date2) => {
+  return (date2 - date1) / (1000 * 60 * 60 * 24);
+};
+
+const days1 = daysPass(new Date(2037, 3, 14), new Date(2037, 2, 24));
+console.log(days1);
+
+// Timers
+
+const ingredients = ["olives", "Tomato"];
+const pizzaTimer = setTimeout(
+  (ing1, ing2) => {
+    console.log(`Here is Your Pizza🍕 with ${ing1} and ${ing2}`);
+  },
+  3000,
+  ...ingredients
+);
+console.log(`waiting....`);
+
+if (ingredients.includes("spinach")) clearTimeout(pizzaTimer);
+// setInterval
+// setInterval(() => {
+//   const now = new Date();
+//   console.log(now);
+// }, 1000);
